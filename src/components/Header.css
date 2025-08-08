@@ -1,0 +1,36 @@
+
+.header__container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem; /* standard for all sections */
+    background-color:var(--color-bg-alt); /* full-width background */
+
+}
+.header__logo{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header__logo-img{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.header__nav-list{
+    display:flex;
+    gap:2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    font-size:1.2rem;
+    font-weight: 700;
+}
+.header__nav-item a {
+    text-decoration: none;
+    color: inherit; 
+}
+.header__nav-item a:hover{
+ color:var(--color-primary);   
+}
