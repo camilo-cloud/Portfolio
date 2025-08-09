@@ -1,36 +1,111 @@
-
-.header__container{
-    display:flex;
-    align-items:center;
+.header__container {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 1rem 2.5rem; /* standard for all sections */
-    background-color:var(--color-bg-alt); /* full-width background */
-
+    padding: 1rem 2.5rem; /* Standard for all sections */
+    background-color: var(--color-bg-alt);
 }
-.header__logo{
-    display:flex;
+
+/* Logo link */
+.header__logo-link {
+    display: flex;
     align-items: center;
     gap: 1rem;
+    text-decoration: none;
 }
-.header__logo-img{
-    height:50px;
-    width:50px;
+
+.header__logo-img {
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
-.header__nav-list{
-    display:flex;
-    gap:2rem;
+
+.header__logo-text:hover,
+.header__nav-item a:hover {
+    color: var(--color-primary);
+    transition: color 0.3s ease-in-out;
+}
+
+/* Navigation (desktop) */
+.header__nav-list {
+    display: flex;
+    gap: 2rem;
     list-style: none;
     margin: 0;
     padding: 0 20px;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
+
 .header__nav-item a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
-.header__nav-item a:hover{
- color:var(--color-primary);   
+
+/* Mobile menu toggle button */
+.header__menu-toggle {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Mobile styles */
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Show toggle button */
+    .header__menu-toggle {
+        display: block;
+    }
+
+    .header__container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .header__logo {
+        font-size: 0.90rem;
+        padding: 0.5rem;
+    }
+
+    /* Hide nav by default */
+    .header__nav {
+        position: absolute;
+        top: 90px; /* height of header */
+        right: 0;
+        background-color: var(--color-bg);
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 100;
+    }
+
+    /* Show menu when active */
+    .header__nav.active {
+        transform: translateX(0);
+    }
+
+    /* Vertical nav list for mobile */
+    .header__nav-list {
+        flex-direction: column;
+        gap: 0; /* Remove gap between items */
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Each item fills the menu width */
+    .header__nav-item {
+        width: 100%;
+        border-bottom: 1px solid var(--color-border); /* Separator line between items */
+        text-align: center; /* Center text horizontally */
+    }
+
+    /* Link fills the entire clickable area */
+    .header__nav-item a {
+        display: block; /* Make link act like a button */
+        padding: 1rem 0; /* Vertical spacing inside each item */
+    }
 }

@@ -1,20 +1,32 @@
 @import 'src/styles/variables.css';
 
+/* Reset default browser styles and set base sizing */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+html, body {
+    height: 100%; 
+}
+
+/* Apply global font, background, and text color */
 body {
     font-family: var(--font-main);
     background-color: var(--color-bg);
     color: var(--color-text);
-  }
-  
-  h1, h2, h3 {
+}
+
+h1, h2, h3 {
     color: var(--color-text);
-  }
-  
-  a {
+}
+
+a {
     color: var(--color-text);
-  }
-  
-  a:hover {
+    text-decoration: none; 
+}
+
+a:hover {
     color: var(--color-secondary);
-  }
-  
+}
