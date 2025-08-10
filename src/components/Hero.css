@@ -21,7 +21,7 @@
 
 .hero__title {
     font-size: clamp(2rem, 6vw, 4rem); /* Responsive scaling */
-    color: var(--color-primary);
+    color: var(--color-text);
     margin-bottom: 1rem;
 }
 
@@ -34,13 +34,14 @@
 }
 
 .hero__button {
-    background-color: var(--color-primary);
-    color: var(--color-bg);
-    padding: 1.5rem 6rem;
+    background-color: var(--color-border);
+    color: var(--color-text);
+    padding: 1rem 6rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size:1.3rem;
 }
 
 .hero__button:hover {

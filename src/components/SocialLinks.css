@@ -1,7 +1,7 @@
 .social-links {
     position: absolute; /* Position inside the Hero */
     left: 0; /* Distance from the left side */
-    top: 50%; /* Center vertically */
+    top: 55%; /* Center vertically */
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
