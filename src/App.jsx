@@ -2,6 +2,7 @@ import react from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
+import MouseScroll from "./components/MouseScroll";
 import "./App.css"
 
 export default function App(){
@@ -9,6 +10,7 @@ export default function App(){
     <>
       <Header />
       <Hero />
+      <MouseScroll />
       <AboutMe />
     </>
   )

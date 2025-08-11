@@ -4,7 +4,7 @@ import logo from "/src/assets/images/logo.jpg";
 
 export default function AboutMe() {
   return (
-    <section className="aboutMe">
+    <section id="about" className="aboutMe">
       <h2 className="aboutMe__title">About Me</h2>
 
       <motion.div

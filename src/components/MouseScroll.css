@@ -1,0 +1,26 @@
+/* MouseScroll - container and SVG should be transparent so it sits cleanly on the Hero */
+.mouse-scroll-container {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent; /* ensure no background box */
+  pointer-events: none;    /* avoid interfering with clicks */
+}
+
+/* make sure SVG itself has no background and renders as block for proper layout */
+.mouse-svg {
+  display: block;
+  background: none;
+  transform: scaleX(1.3);
+}
+
+/* subtle glow along the shape — small blur and low opacity to avoid box-like halo */
+.mouse-path {
+  filter: drop-shadow(0 6px 18px rgba(58, 191, 248, 0.06));
+}
+
+/* wheel style adjustments (no extra transform causing layout artifacts) */
+.mouse-wheel {
+  transform-box: fill-box;
+}
