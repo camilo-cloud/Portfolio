@@ -1,6 +1,6 @@
 import "./AboutMe.css";
 import { motion } from "framer-motion";
-import logo from "/src/assets/images/logo.jpg";
+import aboutMe1 from "/src/assets/images/aboutMe1.jpg";
 
 export default function AboutMe() {
   return (
@@ -11,7 +11,7 @@ export default function AboutMe() {
         className="aboutMe__content"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
         viewport={{ once: true }}
       >
 
@@ -19,17 +19,17 @@ export default function AboutMe() {
           className="aboutMe__image-wrapper"
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <img src={logo} alt="Profile" className="aboutMe__image" />
+          <img src={aboutMe1} alt="Profile" className="aboutMe__image" />
         </motion.div>
 
         <motion.div
           className="aboutMe__text"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 0.4, ease: "easeOut", delay: 0.3 }}
           viewport={{ once: true }}
         >
           <p className="aboutMe__text-p">
