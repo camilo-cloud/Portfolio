@@ -1,6 +1,6 @@
 import "./AboutMe.css";
 import { motion } from "framer-motion";
-import aboutMe1 from "/src/assets/images/aboutMe1.jpg";
+import aboutMe1 from "/src/assets/images/aboutMe1_optimized.jpg";
 
 export default function AboutMe() {
   return (
