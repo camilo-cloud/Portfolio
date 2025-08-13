@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects"
 import MouseScroll from "./components/MouseScroll";
+import Footer from "./components/Footer"
 import "./App.css"
 
 export default function App(){
@@ -14,6 +15,7 @@ export default function App(){
       <MouseScroll />
       <AboutMe />
       <Projects />
+      <Footer />
     </>
   )
 }
