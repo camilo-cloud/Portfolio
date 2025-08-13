@@ -2,7 +2,7 @@
 /* Section wrapper */
 .aboutMe {
   position: relative; /* needed so the image glow pseudo-element sits above the section background */
-  margin: 60px 0 10px;
+  margin: 60px 0 0 0;
   padding: 6rem 2.5rem;
   background: linear-gradient(
     to bottom,
