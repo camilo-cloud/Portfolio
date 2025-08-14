@@ -1,11 +1,16 @@
 import "./AboutMe.css";
 import { motion } from "framer-motion";
-import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub } from "react-icons/fa";
-import { SiJavascript, SiVite } from "react-icons/si";
-import aboutMe1 from "/src/assets/images/aboutMe1_optimized.jpg";
+import { FaReact, FaGitAlt, FaBullseye, FaUsers, FaVideo, FaSearch } from "react-icons/fa";
 
 export default function AboutMe() {
-  const icons = [FaReact, SiJavascript, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, SiVite];
+  const skills = [
+    { text: "Frontend Development (React, JS, HTML, CSS)", icon: FaReact },
+    { text: "Software Testing & Quality Assurance", icon: FaBullseye },
+    { text: "Git, GitHub & Vite Workflow", icon: FaGitAlt },
+    { text: "Digital Marketing & Audience Growth", icon: FaUsers },
+    { text: "Content Creation (YouTube, Blogs)", icon: FaVideo },
+    { text: "SEO & Web Optimization", icon: FaSearch }
+  ];
 
   return (
     <section id="about" className="aboutMe">
@@ -19,13 +24,39 @@ export default function AboutMe() {
         viewport={{ once: true }}
       >
         <motion.div
-          className="aboutMe__image-wrapper"
-          initial={{ scale: 0.8, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
+          className="aboutMe__skills-column"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <img src={aboutMe1} alt="Profile" className="aboutMe__image" />
+          <motion.ul
+            className="aboutMe__skills-list"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              visible: { transition: { staggerChildren: 0.15 } }
+            }}
+          >
+            {skills.map((skill, i) => {
+              const Icon = skill.icon;
+              return (
+                <motion.li
+                  key={i}
+                  className="aboutMe__skill-item"
+                  variants={{
+                    hidden: { opacity: 0, x: -15 },
+                    visible: { opacity: 1, x: 0 }
+                  }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                >
+                  <Icon className="aboutMe__skill-icon" />
+                  <span className="aboutMe__skill-text">{skill.text}</span>
+                </motion.li>
+              );
+            })}
+          </motion.ul>
         </motion.div>
 
         <motion.div
@@ -36,13 +67,11 @@ export default function AboutMe() {
           viewport={{ once: true }}
         >
           <p className="aboutMe__text-p">
-            I’m a <span className="highlight">Frontend Developer</span>{" "}
-            with a strong foundation in{" "}
-            <span className="highlight">software testing</span>, backed by more
-            than <span className="highlight">10 years</span> ensuring quality
-            and reliability in digital products. My approach blends clean,
-            maintainable code with intuitive UI design, aiming to create smooth,
-            engaging, and responsive user experiences.
+            I’m a <span className="highlight">Frontend Developer</span> with a strong foundation in{" "}
+            <span className="highlight">software testing</span>, backed by more than{" "}
+            <span className="highlight">10 years</span> ensuring quality and reliability in digital products.
+            I combine clean, maintainable code with intuitive UI design, always aiming to deliver{" "}
+            <span className="highlight">responsive</span>, engaging, and performance-driven user experiences.
           </p>
 
           <p className="aboutMe__text-p">
@@ -53,31 +82,15 @@ export default function AboutMe() {
             <span className="highlight">CSS</span>, leveraging{" "}
             <span className="highlight">Git</span>,{" "}
             <span className="highlight">GitHub</span>, and{" "}
-            <span className="highlight">Vite</span> for efficient workflows. My
-            experience in blog management and digital marketing has sharpened
-            my understanding of user engagement and online visibility.
+            <span className="highlight">Vite</span> for efficient workflows.
+            Alongside development, I have several years of hands-on experience in{" "}
+            <span className="highlight">digital marketing</span>, managing{" "}
+            <span className="highlight">blogs</span> and{" "}
+            <span className="highlight">YouTube channels</span>, which honed my skills in{" "}
+            <span className="highlight">content creation</span>,{" "}
+            <span className="highlight">SEO</span>, and{" "}
+            <span className="highlight">audience engagement</span>.
           </p>
-
-          <p className="aboutMe__text-p">
-            I’m currently seeking frontend development opportunities where I can
-            bring value from day one, expand my skills, and help deliver impactful
-            web solutions.
-          </p>
-
-          <div className="aboutMe__tech-icons" role="list" aria-label="Technologies">
-            {icons.map((Icon, i) => (
-              <motion.span
-                className="aboutMe__tech-icon"
-                key={i}
-                initial={{ opacity: 0, y: 8 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.25, ease: "easeOut", delay: 0.5 + i * 0.06 }}
-                viewport={{ once: true }}
-              >
-                <Icon title={Icon.name.replace("Fa","").replace("Si","")} />
-              </motion.span>
-            ))}
-          </div>
         </motion.div>
       </motion.div>
     </section>
