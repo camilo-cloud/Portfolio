@@ -1,5 +1,4 @@
 
-/* Section wrapper */
 .aboutMe {
   position: relative; /* needed so the image glow pseudo-element sits above the section background */
   margin: 60px 0 0 0;
@@ -111,6 +110,27 @@
 
 .highlight:hover::after {
   transform: scaleX(1);
+}
+/* Tech icons row */
+.aboutMe__tech-icons {
+  width:90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  justify-content:space-around;
+}
+
+.aboutMe__tech-icon svg {
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: block;
+}
+
+.aboutMe__tech-icon:hover svg {
+  transform: scale(1.1);
+  color: var(--color-secondary);
 }
 
 /* Responsive adjustments for tablet / mobile */
