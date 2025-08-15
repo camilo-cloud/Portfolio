@@ -22,7 +22,6 @@
   justify-content: space-around;
 }
 
-/* Skills column */
 .aboutMe__skills-column {
   display: flex;
   flex-direction: column;
@@ -53,7 +52,6 @@
   transform: translateX(4px);
 }
 
-/* Skill text hover color only, font-weight fixed to prevent layout shift */
 .aboutMe__skill-text {
   display: inline-block;
   font-weight: bold;
@@ -112,19 +110,21 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .aboutMe{
+    padding:1rem;
+  }
   .aboutMe__content {
     flex-direction: column;
-    text-align: center;
     gap: 1.5rem;
   }
-
+  
   .aboutMe__title {
     font-size: 2.6rem;
   }
 
   .aboutMe__text {
     max-width: 100%;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     margin-left: 0;
   }
 }
