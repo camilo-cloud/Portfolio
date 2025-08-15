@@ -98,7 +98,7 @@ npm run build
 If you want to collaborate, hire me, or just say hello:
 
 - **LinkedIn**: [linkedin.com/in/camilo-cuartas-dev](https://www.linkedin.com/in/camilo-cuartas-dev/)
-- **GitHub**: [github.com/CamiloCuartas](https://github.com/CamiloCuartas)
+- **GitHub**: [github.com/camilo-cloud](https://github.com/camilo-cloud)
 - **Email**: [recursosyapps@gmail.com](mailto:recursosyapps@gmail.com)
 
 ---
