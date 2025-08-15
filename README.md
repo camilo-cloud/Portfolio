@@ -1,12 +1,108 @@
-# React + Vite
+# 🌐 Personal Portfolio - Camilo Cuartas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built with **React** and **Vite**, designed to showcase my skills, projects, and experience as a **Frontend Developer**. It is fully responsive, following modern UI/UX practices, and optimized for performance.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Features
 
-## Expanding the ESLint configuration
+- **Responsive Design** – Works seamlessly across mobile, tablet, and desktop.
+- **Modern Tech Stack** – Built with React + Vite for fast development and optimized builds.
+- **Interactive UI** – Smooth animations and transitions for an engaging user experience.
+- **Dark Mode Styling** – Custom color palette for a professional, elegant look.
+- **Project Showcase** – Includes real-world projects with descriptions and links.
+- **Contact Section** – Allows visitors to get in touch easily.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+), React
+- **Build Tool**: Vite
+- **Version Control**: Git, GitHub
+- **Deployment**: *(Deployed using [Vercel](https://vercel.com))*
+- **Design Tools**: Figma (for layout and visual planning)
+
+---
+
+---
+
+## ✨ Featured Project
+
+### MuebleArte
+
+A responsive furniture e-commerce landing page built with React and Vite. This project demonstrates my skills in building modern, responsive web applications.
+
+-   **Live Demo:** [https://camilo-cloud.github.io/pagina-muebles/](https://camilo-cloud.github.io/pagina-muebles/)
+-   **Repository:** [https://github.com/camilo-cloud/pagina-muebles](https://github.com/camilo-cloud/pagina-muebles)
+-   **Technologies Used:** React, Vite, CSS
+
+---
+
+
+## 📂 Project Structure
+
+```
+portfolio/
+├── public/              # Static assets
+├── src/
+│   ├── assets/          # Images, icons, etc.
+│   ├── components/      # Reusable UI components
+│   ├── data/            # Projects Data
+│   ├── styles/          # CSS files and variables
+│   ├── App.jsx          # Main application component
+│   ├── App.css          # CSS App style
+│   ├── main.jsx         # Entry point
+├── package.json
+├── README.md
+└── vite.config.js
+```
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run the development server
+```bash
+npm run dev
+```
+
+### 4. Build for production
+```bash
+npm run build
+```
+
+---
+
+## 📸 Preview
+
+![Portfolio Preview](./assets/images/aboutMe1_optimized.jpg)
+
+---
+
+## 📫 Contact
+
+If you want to collaborate, hire me, or just say hello:
+
+- **LinkedIn**: [linkedin.com/in/camilo-cuartas-dev](https://www.linkedin.com/in/camilo-cuartas-dev/)
+- **GitHub**: [github.com/CamiloCuartas](https://github.com/CamiloCuartas)
+- **Email**: [recursosyapps@gmail.com](mailto:recursosyapps@gmail.com)
+
+---
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
