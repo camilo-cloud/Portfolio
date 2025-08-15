@@ -37,6 +37,9 @@ A responsive furniture e-commerce landing page built with React and Vite. This p
 -   **Repository:** [https://github.com/camilo-cloud/pagina-muebles](https://github.com/camilo-cloud/pagina-muebles)
 -   **Technologies Used:** React, Vite, CSS
 
+## 📸 Preview
+
+![Project Cover](./src/assets/images/portada.png)
 ---
 
 
@@ -89,7 +92,8 @@ npm run build
 
 ## 📸 Preview
 
-![Portfolio Preview](./assets/images/aboutMe1_optimized.jpg)
+![Portfolio Screenshot](./src/assets/images/portfolio.png)
+
 
 ---
 
