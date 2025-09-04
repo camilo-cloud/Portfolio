@@ -2,6 +2,9 @@
 
 This is my personal portfolio website built with **React** and **Vite**, designed to showcase my skills, projects, and experience as a **Frontend Developer**. It is fully responsive, following modern UI/UX practices, and optimized for performance.
 
+
+-   **Live Demo:** [https://portfolio-pink-pi.vercel.app/](https://portfolio-pink-pi.vercel.app/)
+
 ---
 
 ## 📋 Features
