@@ -10,7 +10,7 @@ export default function SocialLinks(){
         <a href="https://www.linkedin.com/in/camilo-cuartas-dev/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
-        <a href="https://twitter.com/TU_USUARIO" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
           <FaTwitter />
         </a>
       </div>
