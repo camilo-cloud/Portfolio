@@ -29,16 +29,29 @@ This is my personal portfolio website built with **React** and **Vite**, designe
 ---
 
 ---
+## ✨ Projects
 
-## ✨ Featured Project
+### MiniMarket - React E-commerce
+
+A complete front-end simulation of an online minimarket. This project demonstrates a full e-commerce experience, including a dynamic shopping cart with state persistence (`localStorage`), client-side routing, performance optimizations, and 404 error handling.
+
+-   **Live Demo:** [https://mini-market-eosin.vercel.app/](https://mini-market-eosin.vercel.app/)
+-   **Repository:** [https://github.com/camilo-cloud/MiniMarket-React](https://github.com/camilo-cloud/MiniMarket-React)
+-   **Technologies Used:** React, Vite, React Router, CSS, localStorage
+
+## 📸 Preview
+
+![Project Cover](./src/assets/images/minimarket-cover.png)
+---
 
 ### MuebleArte
 
-A responsive furniture e-commerce landing page built with React and Vite. This project demonstrates my skills in building modern, responsive web applications.
+A responsive furniture e-commerce landing page built with React and Vite. This project demonstrates skills in building modern and responsive web designs from scratch.
 
 -   **Live Demo:** [https://camilo-cloud.github.io/pagina-muebles/](https://camilo-cloud.github.io/pagina-muebles/)
 -   **Repository:** [https://github.com/camilo-cloud/pagina-muebles](https://github.com/camilo-cloud/pagina-muebles)
 -   **Technologies Used:** React, Vite, CSS
+
 
 ## 📸 Preview
 
