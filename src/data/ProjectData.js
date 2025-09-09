@@ -2,7 +2,7 @@
 
 // Import images from assets so Vite can optimize them
 import mueblesImg from '../assets/images/portada.webp';
-import placeholder1 from '../assets/images/portada2.webp';
+import minimarketImg from '../assets/images/minimarket-cover.png';
 import placeholder2 from '../assets/images/portada3.webp';
 
 export const projects = [
@@ -17,12 +17,12 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Portfolio Placeholder',
-    description: 'Coming soon: a modern, responsive web app showcasing design and code skills.',
-    image: placeholder1,
-    liveUrl: '#',
-    repoUrl: '#',
-    tech: ['React', 'Vite']
+    title: 'React E-commerce',
+    description: 'A complete front-end simulation of an online minimarket with a dynamic shopping cart.',
+    image: minimarketImg,
+    liveUrl: 'https://mini-market-eosin.vercel.app/',
+    repoUrl: 'https://github.com/camilo-cloud/MiniMarket',
+    tech: ['Vite', 'React Router', 'CSS', 'localStorage']
   },
   {
     id: 3,
